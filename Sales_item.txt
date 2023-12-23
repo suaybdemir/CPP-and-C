@@ -1,0 +1,9 @@
+#ifndef salesitem
+#define salesitem
+
+class Sales_item()
+{
+
+}
+
+#endif // salesitem
