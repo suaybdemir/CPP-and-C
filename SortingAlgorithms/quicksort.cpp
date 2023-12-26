@@ -8,7 +8,7 @@ int partition(int arr[],int low,int high)
 	
 	int i = low-1;
 	
-	for(int j=low;j<=high;j++)
+	for(size_t j=low;j<=high;j++)
 	{
 		if(arr[j]<pivot)
 		{
@@ -34,10 +34,11 @@ int main(void)
 	int arr[]={10,7,8,9,11,5};
 	int n = sizeof(arr)/sizeof(arr[0]);
 
+
 	quickSort(arr,0,n-1);
 	
 	cout<<"Sorted Array\n";
-	for(int i=0;i<n;i++)
+	for(size_t i=0;i<n;i++)
 	{
 		cout<<arr[i]<<" ";
 	}
