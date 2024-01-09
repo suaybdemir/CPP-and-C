@@ -42,7 +42,7 @@ class Utility
 		while(i<count-1)
 		{
 			char ch = *ptr;
-			ptr;
+			ptr++;
 			i += 1;
 			if(ch==*ptr)
 			{
