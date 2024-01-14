@@ -6,7 +6,7 @@ using namespace std;
 
 class Word{
 	private:
-	char * word;
+	char *word;
 	
 	public:
 	Word(char * w)
@@ -26,49 +26,37 @@ class Utility
 {
 	public :
 	bool Output(Word w){
-		int count = 0;
 		
-		char *ptr = w.getWord();
-		
-	
-		while(*ptr != '\0')
-		{
-			count++;
-			ptr++;
-		}
-		int i = 0;
-		
-		ptr =  w.getWord();	
-		while(i<count-1)
-		{
-			char ch = *ptr;
-			ptr++;
-			i += 1;
-			if(ch==*ptr)
+	 int length = strlen(w.getWord());
+
+  
+   	 if (length % 2 != 0) {
+        cout << w.getWord() << " is an incorrect input" << endl;
+        return false;
+   	 }
+  	
+    for (int i = 0; i < length - 1; i++) {
+        for (int j = i + 1; j < length; j++) {
+            if (w.getWord()[i] != w.getWord()[j]) 
 			{
-				cout<<w.getWord()<<" is a incorrect input";
-				return false;
-			}
-		}
-		if(count%2==0)
-		{
-			cout<<w.getWord()<<" is a valid string";
-			return true;
-		}
-		else
-		{
-			cout<<w.getWord()<<" is not a valid string";
-			return true;
-		}
-		
-		return true;
+               cout << w.getWord() << " is not a valid string" << endl;
+                return false;
+            }
+           
+        }
+       
+    
+    }
+
+    cout << w.getWord() << " is a valid string" << endl;
+    return true;
 	}
 };
 
 int main(void)
 {
 	char text[20];
-	cout<<"enter the string:"<<endl;
+	cout<<"Enter the string:"<<endl;
 	cin>>text;
 	
 	Word obj(text);
@@ -79,4 +67,5 @@ int main(void)
 	
 	
 	return 0;
+	
 }
