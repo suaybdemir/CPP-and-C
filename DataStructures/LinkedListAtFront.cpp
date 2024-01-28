@@ -17,7 +17,8 @@ class LinkedList{
 				tail = NULL;
 			}
 			
-	void insertNodeAtFront(int value){
+	void insertNodeAtFront(int value)
+	{
 		Node *newNode = new Node;
 		newNode ->data = value;
 		newNode ->next = NULL;
