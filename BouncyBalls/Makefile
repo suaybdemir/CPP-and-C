@@ -1,2 +1,2 @@
 all:
-	g++ -I src/include -L src/lib -o main ball.cpp -lmingw32 -lSDL2main -lSDL2
+	g++ -Isrc/Include -Lsrc/lib -o main ball.cpp -lmingw32 -lSDL2main -lSDL2
