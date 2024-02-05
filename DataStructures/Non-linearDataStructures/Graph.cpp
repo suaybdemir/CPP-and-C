@@ -22,6 +22,8 @@ void create(Node* head[])
 	cout<<"Enter the no. of edges:\n";
 	cin>>no;
 	
+	
+	
 	for(int i = 0 ; i<no ; i++)
 	{
 		cout<<"\nEnter the starting node ending node and weight:\n";
@@ -29,25 +31,29 @@ void create(Node* head[])
 		cin>>v1;
 		cin>>v2;
 		cin>>weight;
-	}
 	
-	newNode = new Node();
-	newNode->vertex = v2;
-	newNode->weight=weight;
-	temp = head[v1];
-	
-	if(temp==NULL)
-	{
-		head[v1] = newNode;
-	}
-	else
-	{
-		while(temp->next!=NULL)
+		newNode = new Node();
+		newNode->vertex = v2;
+		newNode->weight=weight;
+		temp = head[v1];
+		
+		if(temp==NULL)
 		{
-			temp=temp->next;
+			head[v1] = newNode;
 		}
-		temp->next = newNode;
+		else
+		{
+			while(temp->next!=NULL)
+			{
+				temp=temp->next;
+			}
+			temp->next = newNode;
+		}
 	}
+	
+	
+	
+	
 	
 	if(choice==1)
 	{
