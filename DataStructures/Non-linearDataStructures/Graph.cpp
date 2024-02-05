@@ -5,11 +5,11 @@ using namespace std;
 class Node{
 	public:
 		int vertex;
-		int weight
-		Node *left,*right;
+		int weight;
+		Node *next;
 };
 
-void create(Node *head)
+void create(Node* head[])
 {
 	char ch='y';
 	int v1,v2,choice,no,weight;
@@ -18,10 +18,13 @@ void create(Node *head)
 	cout<<"0-Directed Graph\n";
 	cout<<"1-Undirected Graph\n";
 	cout<<"Enter your choice (0 or 1):\n";
+	cin>>choice;
+	cout<<"Enter the no. of edges:\n";
+	cin>>no;
 	
-	for(size_t i = 0 ; i<no ; i++)
+	for(int i = 0 ; i<no ; i++)
 	{
-		cout<<"\n Enter the starting node ending node and weight:\n";
+		cout<<"\nEnter the starting node ending node and weight:\n";
 		
 		cin>>v1;
 		cin>>v2;
@@ -31,8 +34,8 @@ void create(Node *head)
 	newNode = new Node();
 	newNode->vertex = v2;
 	newNode->weight=weight;
-	
 	temp = head[v1];
+	
 	if(temp==NULL)
 	{
 		head[v1] = newNode;
@@ -52,6 +55,7 @@ void create(Node *head)
 		newNode->vertex = v1;
 		newNode->weight = weight;
 		temp = head[v2];
+		
 		if(temp==NULL)
 		{
 			head[v2] = newNode;
@@ -67,7 +71,7 @@ void create(Node *head)
 	}
 }
 
-void display(Node *head[],int n)
+void display(Node*head[],int n)
 {
 	int v;
 	Node *adj;
@@ -88,7 +92,7 @@ void display(Node *head[],int n)
 
 int main(void)
 {
-	char c = "y";
+	char c = 'y';
 	int ch,start,n,visited[10],v;
 	Node *head[50];
 	cout<<"No. of vertices in the graph:\n";
@@ -99,6 +103,6 @@ int main(void)
 	}
 	
 	create(head);
-	display(haed,n);
+	display(head,n);
 	return 0;
 }
