@@ -49,32 +49,29 @@ void create(Node* head[])
 			}
 			temp->next = newNode;
 		}
-	}
-	
-	
-	
-	
-	
-	if(choice==1)
-	{
-		newNode = new Node();
-		newNode->vertex = v1;
-		newNode->weight = weight;
-		temp = head[v2];
-		
-		if(temp==NULL)
+		if(choice==1)
 		{
-			head[v2] = newNode;
-		}
-		else
-		{
-			while(temp->next!=NULL)
+			newNode = new Node();
+			newNode->vertex = v1;
+			newNode->weight = weight;
+			temp = head[v2];
+			
+			if(temp==NULL)
 			{
-				temp = temp->next;
+				head[v2] = newNode;
 			}
-			temp->next = newNode;
+			else
+			{
+				while(temp->next!=NULL)
+				{
+					temp = temp->next;
+				}
+				temp->next = newNode;
+			}
 		}
 	}
+	
+	
 }
 
 void display(Node*head[],int n)
@@ -88,7 +85,7 @@ void display(Node*head[],int n)
 		adj = head[v];
 		while(adj!=NULL)
 		{
-			cout<<adj->vertex<<"=>weight:"<<adj->weight<<" ";
+			cout<<adj->vertex<<" =>weight:"<<adj->weight<<" ";
 			adj = adj->next;
 		}
 		
