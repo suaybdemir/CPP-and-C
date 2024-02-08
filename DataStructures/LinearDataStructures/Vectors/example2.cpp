@@ -8,7 +8,7 @@ class Vector{
 	int cap;
 	int index;
 		void growth(){
-			if(size()>capacity()){
+			if(size()>=capacity()){
 				cap *= 2;
 				T *tmp = new T[cap];
 				for(int i=0 ; i<size() ; i++)
@@ -39,8 +39,9 @@ class Vector{
 		}
 		void push_back(const T& value)
 		{
+			index++;
 			growth();
-			data[++index]=value;
+			data[index]=value;
 		}
 		void pop_back(){ 
 			if(isEmpty())
@@ -61,6 +62,15 @@ class Vector{
 			if(isEmpty())
 				throw "Error : Vector is empty.";
 			return data[index];
+		}
+		
+		T* begin()const
+		{
+			return data;
+		}
+		
+		T* end()const{
+			return data + capacity();
 		}
 };
 
@@ -90,13 +100,24 @@ int main(void)
 		cout<<v.isEmpty()<<endl;
 		
 		cout<<v.front()<<endl;
+	/*	
 		v.pop_back();
 		cout<<"index : "<< v.size()<<endl;
 		cout<<"capacity : "<< v.capacity()<<endl;
 		v.pop_back();
 		cout<<"index : "<< v.size()<<endl;
 		cout<<"capacity : " << v.capacity()<<endl;
+	*/	
 		
+		cout<<"begin : "<<v.begin()<<endl;
+		cout<<"end : "<<v.end()<<endl;
+		int *begin = v.begin();
+		int *end= v.end();
+		while(begin!=end)
+		{
+			cout<<*begin<<" ";
+			begin ++;
+		}
 	}catch(const char* exception)
 	{
 		cout<<exception;
