@@ -1,44 +1,44 @@
 # C++ and C
 
-##DataStructures
+#DataStructures
 	
--Non-Linear Data Structures
--Linear Data Structures
+- Non-Linear Data Structures
+- Linear Data Structures
 
 ---
 
-##BouncyBalls
+#BouncyBalls
 	
--Balls with library of SDL
+- Balls with library of SDL
 
 ---
 
-##Matrix
+#Matrix
 
--Dynamic Matrix Screen
-
----
-
-##Pointers
-
--Basic Pointers Example w/CPP
+- Dynamic Matrix Screen
 
 ---
 
-##Sorting Algortihms
+#Pointers
 
--Searching Algorithms
--Sorting Algorithms
-
----
-
-##Sounds
-
--Sounds which I transformed from original format w/beep() command
+- Basic Pointers Example w/CPP
 
 ---
 
-##makefile
+#Sorting Algortihms
 
--Makefile commands
+- Searching Algorithms
+- Sorting Algorithms
+
+---
+
+#Sounds
+
+- Sounds which I transformed from original format w/beep() command
+
+---
+
+#makefile
+
+- Makefile commands
 
