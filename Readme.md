@@ -16,8 +16,6 @@
 
         Stack
 
-        Vectors
-
 ---
 
 ### **BouncyBalls**
