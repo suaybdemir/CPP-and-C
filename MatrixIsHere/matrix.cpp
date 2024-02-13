@@ -4,6 +4,7 @@
 int Modulus(int iN, int iMod) {
 	int iQ = (iN/iMod);
 	return iN - (iQ*iMod);
+	return 0;
 }
 
 char GetChar(int iGenerator, char cBase, int iRange) {
