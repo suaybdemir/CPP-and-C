@@ -42,6 +42,16 @@
 
 ---
 
+### **Structures**
+
+- Struct
+- typedef
+- using
+- union
+- enum
+
+---
+
 ### **Sorting Algortihms**
 
 - Searching Algorithms

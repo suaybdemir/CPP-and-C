@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
+/*
 struct Date{
     int day,month,year;
 };
+*/
 
 struct Advertisement
 {
@@ -11,7 +13,12 @@ struct Advertisement
     float price;
     int duration;
     char isCertified;
-    struct Date dateOfAdvt;
+    //struct Date dateOfAdvt;
+    struct Date
+    {
+    	int day,month,year;
+    }dateOfAdvt;
+    
 };
 
 int main(void)
