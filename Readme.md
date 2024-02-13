@@ -18,7 +18,7 @@
         
 - Algorithm Design Strategies
 	
-	Sorting and Searching Algorithms
+- Sorting and Searching Algorithms
 	
 ---
 
