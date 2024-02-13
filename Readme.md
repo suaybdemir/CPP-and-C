@@ -15,7 +15,11 @@
         Queue
 
         Stack
-
+        
+- Algorithm Design Strategies
+	
+	Sorting and Searching Algorithms
+	
 ---
 
 ### **BouncyBalls**
