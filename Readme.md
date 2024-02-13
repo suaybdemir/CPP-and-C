@@ -4,19 +4,19 @@
 	
 - Non-Linear Data Structures
 
-    Graph
+        Graph
 
-    Tree
+        Tree
 
 - Linear Data Structures
 
-    LinkedList
+        LinkedList
 
-    Queue
+        Queue
 
-    Stack
+        Stack
 
-    Vectors
+        Vectors
 
 ---
 
@@ -36,7 +36,7 @@
 
 - Basic Pointers Example w/CPP
 
-    Pointers to Pointers
+        Pointers to Pointers
 
 ---
 
@@ -52,13 +52,13 @@
 
 - Sounds which I transformed from original format w/beep() command
 
-    Dismantle-Peter Sandberg
+        Dismantle-Peter Sandberg
 
-    Faded
+        Faded
 
-    Mario
+        Mario
 
-    Turkish March
+        Turkish March
     `
 ---
 
