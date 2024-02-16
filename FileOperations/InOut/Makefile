@@ -1,8 +1,8 @@
-output: main.o
-		g++ main.o -o output
+output: examp1.o
+		g++ examp1.o -o output
 
-main.o: main.c
-		g++ -c main.c
+main.o: examp1.c
+		g++ -c examp1.c
 
 run: output
 	./output
