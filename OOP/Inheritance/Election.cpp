@@ -41,7 +41,7 @@ class GeneralElection : public Election
   public:
    double calcVotePercentage(int partyA , int partyB){
        //Implement your code
-       return 100 - (((partyA+partyB*100))/getTotalPeople()) ;
+       return (((partyA+partyB*100))/getTotalPeople()) ;
    }
    double calcWomenVotePercentage(int womenVotes){
         //Implement your code
@@ -82,7 +82,7 @@ int main()
 
     cout<<endl;
 
-    cout<<"Vote Percentage: "<<ge.calcVotePercentage(partyA,partyB)<<endl;
+    cout<<"Vote Percentage: "<<100 - ge.calcVotePercentage(partyA,partyB)<<endl;
     cout<<endl;
     cout<<"Women Vote Percentage: "<<ge.calcWomenVotePercentage(womenVotes)<<endl;
     cout<<endl;
