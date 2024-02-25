@@ -11,7 +11,7 @@ public:
     {
         socialSecurityNumber = ssn;
     }
-    string getSocialNumber()
+    string getSocialSecurityNumber()
     {
         return socialSecurityNumber;
     }
@@ -50,7 +50,7 @@ public:
    }
 };
 
-class Trainee : public Employee , public Student
+class Trainee : public Student , public Employee
 {
 private:
     int traineeId;
@@ -81,7 +81,7 @@ int main() {
     t.setSocialSecurityNumber(ssn);
 
     cout<<"Trainee ID: "<<t.getTraineeId()<<endl;
-    cout<<"Social Security Number: "<<t.getSocialNumber()<<endl;
+    cout<<"Social Security Number: "<<t.getSocialSecurityNumber()<<endl;
 
     //fill the code here
     return 0;
