@@ -48,7 +48,7 @@ class Dress  : public Product
 
         if(size=='L') setMarkedPrice(1000+getMarkedPrice());
         else if(size=='M') setMarkedPrice(500+getMarkedPrice());
-        else return getMarkedPrice();
+        else getMarkedPrice();
 
         setMarkedPrice(markedPrice);
         
