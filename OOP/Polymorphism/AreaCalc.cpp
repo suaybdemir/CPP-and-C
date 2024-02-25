@@ -4,18 +4,9 @@ using namespace std;
 class Shape
 {
     public:
-        double calculateArea(int radius)
-        {
-            return 3.14 * radius * radius;
-        }
-        double calculateArea(int width,int height)
-        {
-            return width*height;
-        }
-        double calculateArea(float base,float height)
-        {
-            return base * height /2;
-        }
+        
+        virtual double calculateAre()=0;
+        
 };
 
 class Circle : public Shape
@@ -30,6 +21,10 @@ class Circle : public Shape
         int getRadius()
         {
             return radius;
+        }
+        double calculateArea(int radius)
+        {
+            return 3.14 * radius * radius;
         }
 };
 
@@ -54,6 +49,10 @@ class Rectangle : public Shape
     {
         return height;
     }
+    double calculateArea(int width,int height)
+    {
+        return width*height;
+    }
 };
 
 class Triangle : public Shape
@@ -77,7 +76,10 @@ class Triangle : public Shape
             {
                 return height;
             }
-            
+            double calculateArea(float base,float height)
+            {
+                return base * height /2;
+            }
 
 };
 
