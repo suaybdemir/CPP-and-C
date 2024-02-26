@@ -35,7 +35,6 @@ class MonthlyExpense
             expense.medical = medical + b.medical;
             return expense;
         }
-
 };
 
 int main(void)

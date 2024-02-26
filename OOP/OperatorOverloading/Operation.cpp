@@ -1,65 +1,49 @@
-//IMPLEMENT 'main' IN THIS FILE
+#include <iostream>
+#include "Addition.cpp"
 
-#include<iostream>
-#include "Addition.h"
+Addition::Addition(int r, int i) : real(r), imaginary(i) {}
 
+int Addition::getReal() const {
+    return real;
+}
 
-using namespace std;
+int Addition::getImaginary() const {
+    return imaginary;
+}
 
+// Implementation of Operation class methods
 
+int Operation::addRealPart(const Addition& a, const Addition& b) {
+    return a.real + b.real;
+}
 
-class Operation{
-    public:
-    //Fill the code here
+int Operation::addImaginaryPart(const Addition& a, const Addition& b) {
+    return a.imaginary + b.imaginary;
+}
 
-    friend class Addition;
+// Main function
 
-    int addRealPart(const Addition& obj1,const Addition& obj2)
-    {
-        Addition sum = obj1 + obj2;
-        return sum.getReal();
-    }
-    int addImaginaryPart(const Addition& obj1,const Addition& obj2)
-    {
-        Addition sum = (obj1,obj2);
-        return sum.getImg();
-    }
-};   
+int main() {
+    int real1, img1, real2, img2;
 
-int main()
-{
+    // Input for the first complex number
+    std::cout << "Enter real and imaginary part of the first complex number\n";
+    std::cin >> real1 >> img1;
 
-    Addition a1;
-    Addition a2;
-    
-    int real,img=0;
-    cout<<"Enter real and imaginary part of the first complex number"<<endl;
-    cin>>real;
-    cin>>img;
-    //Fill the code here
+    // Input for the second complex number
+    std::cout << "Enter real and imaginary part of the second complex number\n";
+    std::cin >> real2 >> img2;
 
-    a1.setImg(img);
-    a1.setReal(real);
+    // Create Complex objects
+    Addition num1(real1, img1);
+    Addition num2(real2, img2);
 
-    cout<<"Enter real and imaginary part of the second complex number"<<endl;
-    cin>>real;
-    cin>>img;
-    //Fill the code here
+    // Calculate sum of real and imaginary parts using Operation class methods
+    int sumReal = Operation::addRealPart(num1, num2);
+    int sumImg = Operation::addImaginaryPart(num1, num2);
 
-    a2.setImg(img);
-    a2.setReal(real);
+    // Display the result
+    std::cout << "Sum of real and imaginary part is " << sumReal << "+i" << sumImg << std::endl;
 
-    Operation o;
-
-    Addition a3 ;
-
-    a3.setReal(o.addRealPart(a1,a2));
-    a3.setImg(o.addImaginaryPart(a1,a2));
-
-    int sumReal = a3.getReal();
-    int sumImg = a3.getImg();
-
-    cout<<"Sum of real and imaginary part is "<<sumReal<<"+i"<<sumImg<<endl;
-    
     return 0;
 }
