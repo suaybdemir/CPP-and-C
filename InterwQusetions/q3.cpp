@@ -22,5 +22,5 @@ a)syntax error
 b)behaviour problem
 c)well defined
 
-
+answer a because of access denied
 */
