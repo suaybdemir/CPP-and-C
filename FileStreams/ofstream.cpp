@@ -17,18 +17,25 @@ int main(void)
         {
             cout<<"File opened succesfully!"<<endl;
 
-            outFile<<"content"<<endl;
+            string line;
 
-            double  x = 4.5;
-            int y = 10;
-            string z = "abc";
+            cout<<"Enter"<<endl;
+            getline(cin,line);
 
-            outFile<<x<<endl<<y<<endl<<z<<endl;
+            outFile<<line<<endl;
 
             outFile.close();
 
         }
-        else throw runtime_error("Unable to open file for writing.");  
+        else throw runtime_error("Unable to open file for writing.");
+
+        outFile.open("file.txt", ios::trunc);
+
+        if(!outFile.is_open())
+        {
+            throw runtime_error("Unable to open file for truncation.");
+        }
+        outFile.close(); // File is now empty
 
         inFile.open("file.txt");
 
