@@ -1,0 +1,4 @@
+int phoneAdd()
+{
+    Record newRecord;
+}
