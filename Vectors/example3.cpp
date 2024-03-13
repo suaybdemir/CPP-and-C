@@ -117,12 +117,23 @@ class Vector{
             }
             else throw "Error : Vector insert";
         }
+
+        void insert(const T* pos,const T* first,const T* last)
+        {
+            int index = pos - begin();
+            while (first != last)
+            {
+                insert(begin() + index++ , *first++);
+            }
+            
+        }
 };
 
 
 int main(void)
 {
 	Vector<int> v;
+    Vector<int> v2;
     /*
 	cout<< "size : "<<v.size()<<endl;
     cout<<"capacity : "<<v.capacity()<<endl;
@@ -141,6 +152,12 @@ int main(void)
     v.push_back(20);
     v.push_back(200);
     v.insert(&v[2],100);
+
+    v2.push_back(2);
+    v2.push_back(20);
+    v2.push_back(200);
+    int arr[] = {1,2,3,4,5};
+    v.insert(&v[1],arr,arr+5);
 
     int *begin = v.begin();
     int *end = v.end();
