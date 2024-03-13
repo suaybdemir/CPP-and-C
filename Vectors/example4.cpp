@@ -132,7 +132,7 @@ class Vector{
             if(begin() <= pos && pos <= end())
             {
                 int index = pos - begin();
-                for(int i = 0;i < size(); i++)
+                for(int i = index;i < size(); i++)
                 {
                     data[i]=data[i+1];
                 }
@@ -146,31 +146,14 @@ class Vector{
 int main(void)
 {
 	Vector<int> v;
-    Vector<int> v2;
-    /*
-	cout<< "size : "<<v.size()<<endl;
-    cout<<"capacity : "<<v.capacity()<<endl;
-
-    v.push_back(2);
-    v.push_back(20);
-    v.push_back(200);
-
-    v.clear();
-
-    cout<< "size : "<<v.size()<<endl;
-    cout<<"capacity : "<<v.capacity()<<endl;
-	*/
-
+   
     v.push_back(2);
     v.push_back(20);
     v.push_back(200);
     v.insert(&v[2],100);
 
-    v2.push_back(2);
-    v2.push_back(20);
-    v2.push_back(200);
-    int arr[] = {1,2,3,4,5};
-    v.insert(&v[1],arr,arr+5);
+    v.erase(v.begin());
+    v.erase(v.end());
 
     int *begin = v.begin();
     int *end = v.end();
