@@ -140,6 +140,17 @@ class Vector{
             }
             else throw "Error : Vector Erase";
         }
+        
+        void erase(const T* first,const T* last)
+        {
+            if(first == begin() && last == end()) clear();
+            int f = first - begin();
+            int l = last - begin();
+            while(f != l--)
+            {
+                erase(f + begin());
+            }
+        }
 };
 
 
@@ -150,10 +161,9 @@ int main(void)
     v.push_back(2);
     v.push_back(20);
     v.push_back(200);
-    v.insert(&v[2],100);
+    v.push_back(2000);
 
-    v.erase(v.begin());
-    v.erase(v.end());
+    v.erase(&v[1],&v[2]);
 
     int *begin = v.begin();
     int *end = v.end();
