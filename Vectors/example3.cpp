@@ -30,10 +30,18 @@ class Vector{
 				data = tmp; 
 			}
 		}
+
+        void reset(int index=-1 , int cap=1)
+        {
+            free(data);
+            data = NULL;
+            this->index = index;
+            this->cap = cap;
+        }
 	public:
 		Vector() : data(NULL),index(-1),cap(1){ data = new T[cap]; }
 	
-		int size()const{ return index; }
+		int size()const{ return index+1; }
 		int capacity()const{ return cap; }
 
 		void push_back(const T& value)
@@ -82,31 +90,29 @@ class Vector{
         {
             return at(index);
         }
+
+        void clear()
+        {
+            reset();
+            data = new T[cap];
+        }
 };
 
 
 int main(void)
 {
 	Vector<int> v;
-	try{
-		
-		v.push_back(10);
-		v.push_back(20);
-        v.push_back(30);
-        v.push_back(40);
-        v.push_back(50);
-        v.push_back(60);
-        v.push_back(0);
-        v.push_back(70);
+	cout<< "size : "<<v.size()<<endl;
+    cout<<"capacity : "<<v.capacity()<<endl;
 
-        v[3] = 3;
+    v.push_back(2);
+    v.push_back(20);
+    v.push_back(200);
 
-        cout<<v.at(3)<<endl;
-		
-	}catch(const char* exception)
-	{
-		cout<<exception;
-	}
+    v.clear();
+
+    cout<< "size : "<<v.size()<<endl;
+    cout<<"capacity : "<<v.capacity()<<endl;
 	
 	
 	return 0;
