@@ -48,6 +48,7 @@ class Vector{
         }
 	public:
 		Vector() : data(NULL),index(0),cap(1){ data = new T[cap]; }
+        ~Vector(){ reset(); } 
 	
 		int size()const{ return index; }
 		int capacity()const{ return cap; }
@@ -150,6 +151,22 @@ class Vector{
             {
                 erase(f + begin());
             }
+        }
+
+        Vector<T>& assign(const vector<T>& rhs)
+        {
+            reset(rhs.size(),rhs.capacity());
+            data = new T[capacity()];
+            for(int i=0; i<size(); i++)
+            {
+                data[i] = rhs[i];
+            }
+            return *this;
+        }
+
+        Vector<T>& operator=(const vector<T>& rhs)
+        {
+            return assign(rhs);
         }
 };
 
