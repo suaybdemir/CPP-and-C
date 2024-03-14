@@ -48,6 +48,20 @@ class Vector{
         }
 	public:
 		Vector() : data(NULL),index(0),cap(1){ data = new T[cap]; }
+        Vector(int n,const T& t = T()) : Vector<T>(){
+            for(int i=0; i<n; i++) push_back(t);
+        }
+
+        Vector(const T* first, const T* last)
+        {
+            while (first!=last) push_back(*first++);
+        }
+
+        Vector(const Vector<T>& rhs) : Vector<T>()
+        {
+            *this = rhs;
+        }
+
         ~Vector(){ reset(); } 
 	
 		int size()const{ return index; }
@@ -153,7 +167,7 @@ class Vector{
             }
         }
 
-        Vector<T>& assign(const vector<T>& rhs)
+        Vector<T>& assign(const Vector<T>& rhs)
         {
             reset(rhs.size(),rhs.capacity());
             data = new T[capacity()];
@@ -164,7 +178,7 @@ class Vector{
             return *this;
         }
 
-        Vector<T>& operator=(const vector<T>& rhs)
+        Vector<T>& operator=(const Vector<T>& rhs)
         {
             return assign(rhs);
         }
