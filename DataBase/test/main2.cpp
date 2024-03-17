@@ -28,28 +28,14 @@ try {
   con->setSchema("test");
 
   stmt = con->createStatement();
-  //pstmt = con->prepareStatement("INSERT INTO test(Name)values(?)");
-  //res = stmt->executeQuery("SELECT PersonID, FirstName FROM Persons");
-  /*for(int i=0; i<1; i++)
-  {
-    cout<<"Write a Name"<<endl;
-    string name;
-    cin>>name;
-    pstmt->setString(1,name);
-    pstmt->executeUpdate();
-  }*/
-
-  stmt = con->execute("SELECT PersonID FROM test ORDER BY PersonID ASC");
+  res = stmt->executeQuery("SELECT PersonID, Name FROM test ORDER BY PersonID ASC");
   
+    res->afterLast();
+    cout << "Person IDs and Names:" << endl;
+    while (res->previous()) {
+      cout << res->getInt(1) << " " << res->getString(2)<<endl;
+    }
 
-
- // res->afterLast();
-  //while (res->previous())
-  //cout << "\t... MySQL counts: " << res->getInt("PersonID") << endl;
- /* while (res->next()) {
-    cout << res->getString(1) << " ";
-    cout << res->getString(2) << endl;
-  }*/
   delete res;
   delete stmt;
   delete con;
