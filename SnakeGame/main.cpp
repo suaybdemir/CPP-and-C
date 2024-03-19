@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unistd.h>
+#include <cstdlib>
 #include <ncurses.h>
 using namespace std;
 
@@ -48,6 +49,8 @@ void Draw()
     }
 
     for(int i=0; i<width; i++) cout<<"*";
+
+    cout<<"\nScore:"<<score<<endl;
 }
 
 void Input()
@@ -91,6 +94,28 @@ void Logic()
         break;
     default:
         break;
+    }
+    if(x==width)
+    {       
+        x=width-1;
+    }
+    if(x<0)
+    {
+        x=0;
+    }
+    if(y==height)
+    {
+        y=height-1;
+    }
+    if(y<0)
+    {
+        y=0;
+    }
+    if( x== fruitX && y == fruitY )
+    {
+        score += 10;
+        fruitX = rand()% width;
+        fruitY = rand()% height;
     }
 }
 
