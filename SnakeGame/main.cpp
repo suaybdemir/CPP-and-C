@@ -10,7 +10,7 @@ const int width = 20;
 const int height = 20;
 int x, y, fruitX, fruitY, score;
 int tailX[100],tailY[100];
-int nTail;
+int nTail = 0;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
 eDirection dir;
 
@@ -45,18 +45,16 @@ void Draw()
             else if( i == fruitY && j == fruitX ) cout<< "F";
             else
             {
-                bool print = false;
+                bool print = true;
                 for(int k = 0;k<nTail ; k++)
                 {
-                    
                     if(tailX[k]==j && tailY[k]==i)
                     {
                         cout<<"o";
-                        print = true;
+                        print = false;
                     }
-                    
                 }
-                if(!print)
+                if(print)
                 {
                     cout<<" ";
                 }
@@ -102,7 +100,7 @@ void Logic()
     int prev2X,prev2Y;
     tailX[0] = x;
     tailY[0] = y;
-    for(int i=1 ; i<nTail; i++)
+    for(int i=1 ; i<=nTail; i++)
     {
         prev2X = tailX[i];
         prev2Y = tailY[i];
@@ -153,13 +151,13 @@ void Logic()
         nTail++;
     }
     
-    for(int i=0 ; i<nTail; i++)
+    /*for(int i=0 ; i<nTail; i++)
     {
         if(tailX[i]==x && tailY[i]==y)
         {
             gameOver=true;
         }   
-    }
+    }*/
 }
 
 int main(void)
