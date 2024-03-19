@@ -25,7 +25,7 @@ try {
   
   driver = get_driver_instance();
   con = driver->connect("tcp://127.0.0.1", "root", "ubuntu");
-  con->setSchema("test");
+  con->setSchema("test");   
 
   stmt = con->createStatement();
   res = stmt->executeQuery("SELECT PersonID, Name FROM test ORDER BY PersonID ASC");

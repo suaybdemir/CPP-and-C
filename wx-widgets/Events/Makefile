@@ -1,10 +1,7 @@
-build: unset ofile run 
-
-unset:
-	unset GTK_PATH
+build: ofile run 
 
 ofile:
-	g++ main2.cpp -o output `wx-config --cxxflags` `wx-config --libs`
+	g++ main3.cpp -o output `wx-config --cxxflags` `wx-config --libs`
 
 run:
 	./output 
