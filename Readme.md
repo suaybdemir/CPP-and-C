@@ -40,6 +40,23 @@
 
 ---
 
+### **Snake Game**
+
+- Simple Snake
+
+	<img src="https://i.ibb.co/3M1ftjF/Screenshot-from-2024-03-21-04-26-40.png" alt="Alt text here">
+
+---
+
+### **Pong Game**
+
+- Simple Pong Game
+
+	<img src="https://i.ibb.co/Yj0qv65/Screenshot-from-2024-03-21-04-27-22.png" alt="Alt text here">
+
+
+---
+
 ### **Pointers**
 
 - Basic Pointers Example w/CPP
