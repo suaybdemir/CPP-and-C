@@ -1,0 +1,4 @@
+/home/ubuntu/Documents/CPP-and-C/unit-tests/app2/build/CMakeFiles/out.dir
+/home/ubuntu/Documents/CPP-and-C/unit-tests/app2/build/CMakeFiles/test.dir
+/home/ubuntu/Documents/CPP-and-C/unit-tests/app2/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Documents/CPP-and-C/unit-tests/app2/build/CMakeFiles/rebuild_cache.dir
