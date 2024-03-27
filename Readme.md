@@ -8,19 +8,19 @@
 
 ### <p align="center">**Matrix**</p>
 
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/640px-The.Matrix.glmatrix.2.png" width="350" height="350" alt="Matrix">/p>
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/640px-The.Matrix.glmatrix.2.png" width="350" height="350" alt="Matrix"></p>
 
 ---
 
-### <p align="center">**Snake Game*</p>
+### <p align="center">**Snake Game**</p>
 
-	<p align="center"><img src="https://i.ibb.co/3M1ftjF/Screenshot-from-2024-03-21-04-26-40.png" width="350" height="350" alt="Snake game"></p>
+	<p align="center"><img src="https://miro.medium.com/v2/da:true/resize:fit:1200/1*kvt7wJf9YhGU29pKu1Rx8g.gif" width="350" height="350" alt="Snake game"></p>
 
 ---
 
 ### <p align="center">**Pong Game**</p>
 
-	<p align="center"><img src="https://i.ibb.co/Yj0qv65/Screenshot-from-2024-03-21-04-27-22.png" width="350" height="350" alt="Alt text here"></p>
+	<p align="center"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KMtAwXdEolrg-jsh19vNKw.jpeg" width="350" height="350" alt="Alt text here"></p>
 ---
 ### <p align="center">**DataStructures**</p>
 	
