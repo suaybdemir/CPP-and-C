@@ -14,7 +14,7 @@
 
 ### <p align="center">**Snake Game**</p>
 
-	<p align="center"><img src="https://miro.medium.com/v2/da:true/resize:fit:1200/1*kvt7wJf9YhGU29pKu1Rx8g.gif" width="350" height="350" alt="Snake game"></p>
+	<p align="center"><img src="https://i.stack.imgur.com/2VXpb.png" width="350" height="350" alt="Snake game"></p>
 
 ---
 
