@@ -14,13 +14,13 @@
 
 ### <p align="center">**Snake Game**</p>
 
-	<p align="center"><img src="https://i.stack.imgur.com/2VXpb.png" width="350" height="350" alt="Snake game"></p>
+<p align="center"><img src="https://i.stack.imgur.com/2VXpb.png" width="350" height="350" alt="Snake game"></p>
 
 ---
 
 ### <p align="center">**Pong Game**</p>
 
-	<p align="center"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KMtAwXdEolrg-jsh19vNKw.jpeg" width="350" height="350" alt="Alt text here"></p>
+<p align="center"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KMtAwXdEolrg-jsh19vNKw.jpeg" width="350" height="350" alt="Alt text here"></p>
 ---
 ### <p align="center">**DataStructures**</p>
 	
