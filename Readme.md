@@ -2,7 +2,7 @@
 
 ### **BouncyBalls**
 
-<img src="https://artandlogic.com/wp-content/uploads/2020/10/animation2.png" alt="Bouncy Balss">
+<img src="https://artandlogic.com/wp-content/uploads/2020/10/animation2.png" width="300" height="300" alt="Bouncy Balss">
 
 ---
 
