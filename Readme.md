@@ -1,29 +1,28 @@
-# C++ and C
+# <p align="center">C++ and C</p>
 
-### **BouncyBalls**
+### <p align="center">**BouncyBalls**</p>
 
-<p align="center"><img src="https://artandlogic.com/wp-content/uploads/2020/10/animation2.png" width="300" height="300" alt="Bouncy Balss"></p>
-
----
-
-### **Matrix**
-
-<p align="center"><<img src="[https://i.ibb.co/3M1ftjF/Screenshot-from-2024-03-21-04-26-40.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/640px-The.Matrix.glmatrix.2.png
-)" alt="Matrix">/p>
+<p align="center"><img src="https://artandlogic.com/wp-content/uploads/2020/10/animation2.png" width="350" height="350" alt="Bouncy Balss"></p>
 
 ---
 
-### **Snake Game**
+### <p align="center">**Matrix**</p>
 
-	<p align="center"><img src="https://i.ibb.co/3M1ftjF/Screenshot-from-2024-03-21-04-26-40.png" alt="Snake game"></p>
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/640px-The.Matrix.glmatrix.2.png" width="350" height="350" alt="Matrix">/p>
 
 ---
 
-### **Pong Game**
+### <p align="center">**Snake Game*</p>
 
-	<p align="center"><img src="https://i.ibb.co/Yj0qv65/Screenshot-from-2024-03-21-04-27-22.png" alt="Alt text here"></p>
+	<p align="center"><img src="https://i.ibb.co/3M1ftjF/Screenshot-from-2024-03-21-04-26-40.png" width="350" height="350" alt="Snake game"></p>
+
 ---
-### **DataStructures**
+
+### <p align="center">**Pong Game**</p>
+
+	<p align="center"><img src="https://i.ibb.co/Yj0qv65/Screenshot-from-2024-03-21-04-27-22.png" width="350" height="350" alt="Alt text here"></p>
+---
+### <p align="center">**DataStructures**</p>
 	
 - Non-Linear Data Structures
 
@@ -45,7 +44,7 @@
 
 ---
 
-### **Pointers**
+### <p align="center">**Pointers**</p>
 
 - Basic Pointers Example w/CPP
 
@@ -53,7 +52,7 @@
 
 ---
 
-### **Structures**
+### <p align="center">**Structures**</p>
 
 - Struct
 - typedef
@@ -63,7 +62,7 @@
 
 ---
 
-### **Sorting Algortihms**
+### <p align="center">**Sorting Algortihms**</p>
 
 - Searching Algorithms
 
@@ -71,7 +70,7 @@
 
 ---
 
-### **Sounds**
+### <p align="center">**Sounds**</p>
 
 - Sounds which I transformed from original format w/beep() command
 
