@@ -1,18 +1,13 @@
 #include <iostream>
+#include <utility>
 using namespace std;
 
 class Employee {    //DO NOT change the class name
     private:
-        int associateId;
         string associateName;
         string workStatus;
     public:
-    //Include necessary methods 
-        int getAssociateId()
-        {
-            return associateId;
-        }
-        string getAssociateName()
+    string getAssociateName()
         {
             return associateName;
         }
@@ -23,11 +18,10 @@ class Employee {    //DO NOT change the class name
         
         void setAssociateId(int id)
         {
-            associateId=id;
         }
         void setAssociateName(string name)
         {
-            associateName=name;
+            associateName=std::move(name);
         }
         void updateStatusDetails(int days)
         {
@@ -35,7 +29,7 @@ class Employee {    //DO NOT change the class name
             {
                 setWorkStatus("Core skills");
             }
-            else if(days>20 && days <=40)
+            else if(days <= 40)
             {
                 setWorkStatus("Advanced skills");
             }
@@ -46,7 +40,7 @@ class Employee {    //DO NOT change the class name
         }
         void setWorkStatus(string ws)
         {
-            workStatus=ws;
+            workStatus=std::move(ws);
         }
         
 };
