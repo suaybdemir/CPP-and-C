@@ -1,6 +1,30 @@
-# C++ and C
+# <p align="center">C++ and C</p>
 
-### **DataStructures**
+### <p align="center">**BouncyBalls**</p>
+
+<p align="center"><img src="https://artandlogic.com/wp-content/uploads/2020/10/animation2.png" width="350" height="350" alt="Bouncy Balss"></p>
+
+---
+
+### <p align="center">**Matrix**</p>
+
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/640px-The.Matrix.glmatrix.2.png" width="350" height="350" alt="Matrix"></p>
+
+---
+
+### <p align="center">**Snake Game**</p>
+
+<p align="center"><img src="https://i.stack.imgur.com/2VXpb.png" width="350" height="350" alt="Snake game"></p>
+
+---
+
+### <p align="center">**Pong Game**</p>
+
+<p align="center"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KMtAwXdEolrg-jsh19vNKw.jpeg" width="350" height="350" alt="Alt text here"></p>
+
+---
+
+### <p align="center">**DataStructures**</p>
 	
 - Non-Linear Data Structures
 
@@ -19,45 +43,10 @@
 - Algorithm Design Strategies
 	
 - Sorting and Searching Algorithms
-	
----
-
-### **BouncyBalls**
-	
-- Balls with library of SDL
-
-![balls](https://artandlogic.com/wp-content/uploads/2020/10/animation2.png)
 
 ---
 
-### **Matrix**
-
-- Dynamic Matrix Screen
-
-
-![matrix](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/640px-The.Matrix.glmatrix.2.png)
-
-
----
-
-### **Snake Game**
-
-- Simple Snake
-
-	<img src="https://i.ibb.co/3M1ftjF/Screenshot-from-2024-03-21-04-26-40.png" alt="Alt text here">
-
----
-
-### **Pong Game**
-
-- Simple Pong Game
-
-	<img src="https://i.ibb.co/Yj0qv65/Screenshot-from-2024-03-21-04-27-22.png" alt="Alt text here">
-
-
----
-
-### **Pointers**
+### <p align="center">**Pointers**</p>
 
 - Basic Pointers Example w/CPP
 
@@ -65,7 +54,7 @@
 
 ---
 
-### **Structures**
+### <p align="center">**Structures**</p>
 
 - Struct
 - typedef
@@ -75,7 +64,7 @@
 
 ---
 
-### **Sorting Algortihms**
+### <p align="center">**Sorting Algortihms**</p>
 
 - Searching Algorithms
 
@@ -83,7 +72,7 @@
 
 ---
 
-### **Sounds**
+### <p align="center">**Sounds**</p>
 
 - Sounds which I transformed from original format w/beep() command
 
@@ -97,8 +86,3 @@
     `
 ---
 
-### **makefile**
-
-- Makefile commands
-
----
