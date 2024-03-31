@@ -1,0 +1,4 @@
+Scanning ...
+	A8:30:BC:B4:14:1C	Galaxy Tab S6 Lite
+	EA:A0:01:17:49:15	Watch
+	B4:20:5B:2B:33:00	OPPO Reno6

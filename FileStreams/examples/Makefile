@@ -1,7 +1,7 @@
 build : run 
 
 run: 
-	g++ main.cpp -o output
+	g++ getLine.cpp -o output
 	./output
 	
 clean:
