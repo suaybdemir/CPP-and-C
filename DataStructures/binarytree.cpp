@@ -39,7 +39,7 @@ struct node* search(struct node* root, int key)
 	{
 		return root;
 	}
-	if(root->key<key)
+	if(root->key < key)
 	{
 		return search(root->right,key);
 	}
